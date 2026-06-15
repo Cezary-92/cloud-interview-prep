@@ -228,7 +228,9 @@ main {
 }
 
 .two-col,
-.scenario-grid {
+.scenario-grid,
+.compact-grid,
+.linux-layout {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
@@ -238,8 +240,14 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.compact-section {
+  padding-top: 42px;
+}
+
 .panel,
-.lab-card {
+.lab-card,
+.compact-card,
+.linux-block {
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -252,14 +260,17 @@ main {
 }
 
 .panel h3,
-.lab-card h3 {
+.lab-card h3,
+.compact-card h3,
+.linux-block h3 {
   margin: 0 0 10px;
   font-size: 20px;
   letter-spacing: 0;
 }
 
 .panel p,
-.lab-card p {
+.lab-card p,
+.compact-card p {
   margin: 0;
   color: var(--muted);
 }
@@ -355,6 +366,63 @@ main {
   color: var(--muted);
 }
 
+.compact-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.compact-card {
+  min-height: 158px;
+  border-top: 4px solid var(--green);
+}
+
+.linux-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.linux-block {
+  padding: 0;
+  overflow: hidden;
+}
+
+.linux-block h3 {
+  padding: 16px 18px;
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+  background: #fbfcfa;
+}
+
+.command-list {
+  display: grid;
+}
+
+.command-list div {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.2fr);
+  gap: 14px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.command-list div:last-child {
+  border-bottom: 0;
+}
+
+.command-list code {
+  align-self: start;
+  padding: 3px 6px;
+  border: 1px solid #cbd6d0;
+  border-radius: 6px;
+  color: #0f342a;
+  background: #eef5f0;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.command-list span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .tag {
   display: inline-block;
   margin-top: 14px;
@@ -448,6 +516,8 @@ details p {
   .hero,
   .two-col,
   .scenario-grid,
+  .compact-grid,
+  .linux-layout,
   .lab-layout {
     grid-template-columns: 1fr;
   }
@@ -481,6 +551,11 @@ details p {
 
   .term-grid {
     grid-template-columns: 1fr;
+  }
+
+  .command-list div {
+    grid-template-columns: 1fr;
+    gap: 7px;
   }
 
   .signal-panel {

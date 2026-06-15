@@ -8,13 +8,15 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#start" aria-label="Przejdz do poczatku">
+      <a class="brand" href="#start" aria-label="Przejdź do początku">
         <span class="brand-mark">MC</span>
         <span>Managed Cloud Prep</span>
       </a>
-      <nav class="nav" aria-label="Glowne sekcje">
+      <nav class="nav" aria-label="Główne sekcje">
         <a href="#narracja">Narracja</a>
         <a href="#fundamenty">One-linery</a>
+        <a href="#kompakt">Kompakt</a>
+        <a href="#linux">Linux</a>
         <a href="#azure-lab">Azure lab</a>
         <a href="#scenariusze">Scenariusze</a>
         <a href="#pytania">Pytania</a>
@@ -24,19 +26,20 @@
     <main id="start">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Rozmowa o prace - Managed Cloud Engineer</p>
-          <h1>Przygotowanie pod cloud, kiedy startujesz bez komercyjnego Azure/AWS</h1>
+          <p class="eyebrow">Rozmowa o pracę - Managed Cloud Engineer</p>
+          <h1>Przygotowanie pod cloud, kiedy nie masz jeszcze praktycznego doświadczenia z Azure/AWS</h1>
           <p class="lead">
-            Twoja mocna strona to operacyjne myslenie z Cisco Mail Gateway: logi,
-            troubleshooting, bezpieczenstwo, incydenty i komunikacja. Ta strona pomaga
-            przelozyc to na jezyk chmury.
+            Twoja mocna strona to operacyjne myślenie z Cisco Mail Gateway: logi,
+            troubleshooting, bezpieczeństwo, incydenty i komunikacja. Ta strona pomaga
+            przełożyć to na język chmury.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#azure-lab">Przejdz do labu</a>
-            <a class="button secondary" href="#fundamenty">Powtorz fundamenty</a>
+            <a class="button primary" href="#azure-lab">Przejdź do labu</a>
+            <a class="button secondary" href="#linux">Linux basics</a>
+            <a class="button secondary" href="#fundamenty">Powtórz fundamenty</a>
           </div>
         </div>
-        <div class="signal-panel" aria-label="Mapa zaleznosci cloud">
+        <div class="signal-panel" aria-label="Mapa zależności cloud">
           <div class="cloud-map">
             <div class="map-node user">User</div>
             <div class="map-line line-a"></div>
@@ -53,40 +56,40 @@
 
       <section id="narracja" class="section">
         <div class="section-head">
-          <p class="eyebrow">Jak sie ustawic na rozmowie</p>
-          <h2>Uczciwa narracja, ktora brzmi dojrzale</h2>
+          <p class="eyebrow">Jak się ustawić na rozmowie</p>
+          <h2>Uczciwa narracja, która brzmi dojrzale</h2>
         </div>
         <div class="two-col">
           <article class="panel accent">
-            <h3>Twoj glowny przekaz</h3>
+            <h3>Twój główny przekaz</h3>
             <p>
-              Nie mam jeszcze komercyjnego doswiadczenia z Azure ani AWS, ale mam
-              doswiadczenie operacyjne z systemami produkcyjnymi, troubleshootingiem,
-              bezpieczenstwem poczty i praca z incydentami na Cisco Mail Gateway.
-              Chce przelozyc ten sposob myslenia na cloud: monitoring, logi, dostepy,
-              siec, automatyzacje i stabilnosc uslug.
+              Nie mam jeszcze praktycznego doświadczenia z Azure ani AWS, ale mam
+              doświadczenie operacyjne z systemami produkcyjnymi, troubleshootingiem,
+              bezpieczeństwem poczty i pracą z incydentami na Cisco Mail Gateway.
+              Chcę przełożyć ten sposób myślenia na cloud: monitoring, logi, dostępy,
+              sieć, automatyzację i stabilność usług.
             </p>
           </article>
           <article class="panel">
-            <h3>Gdy czegos nie wiesz</h3>
+            <h3>Gdy czegoś nie wiesz</h3>
             <p>
-              Nie mialem jeszcze okazji robic tego produkcyjnie w Azure, ale rozumiem
-              koncepcje. Podszedlbym do tego tak: najpierw wplyw na usluge, potem
-              metryki, logi, konfiguracja, ostatnie zmiany i dopiero dzialanie.
+              Nie miałem jeszcze okazji robić tego produkcyjnie w Azure, ale rozumiem
+              koncepcję. Podszedłbym do tego tak: najpierw wpływ na usługę, potem
+              metryki, logi, konfiguracja, ostatnie zmiany i dopiero działanie.
             </p>
           </article>
         </div>
         <div class="quote-strip">
-          <strong>Najwazniejsza pozycja:</strong>
-          osoba operacyjna z doswiadczeniem w troubleshooting/security, ktora swiadomie
-          przechodzi do cloud i potrafi logicznie diagnozowac problemy.
+          <strong>Najważniejsza pozycja:</strong>
+          osoba operacyjna z doświadczeniem w troubleshooting/security, która świadomie
+          przechodzi do cloud i potrafi logicznie diagnozować problemy.
         </div>
       </section>
 
       <section id="fundamenty" class="section">
         <div class="section-head with-tools">
           <div>
-            <p class="eyebrow">Szybka sciaga</p>
+            <p class="eyebrow">Szybka ściąga</p>
             <h2>One-linery techniczne</h2>
           </div>
           <label class="search">
@@ -96,12 +99,125 @@
         </div>
         <div class="chips" aria-label="Kategorie">
           <button class="chip active" data-filter="all">Wszystko</button>
-          <button class="chip" data-filter="network">Siec</button>
+          <button class="chip" data-filter="network">Sieć</button>
           <button class="chip" data-filter="ops">Operacje</button>
+          <button class="chip" data-filter="linux">Linux</button>
           <button class="chip" data-filter="cloud">Cloud</button>
           <button class="chip" data-filter="security">Security</button>
         </div>
         <div id="termGrid" class="term-grid"></div>
+      </section>
+
+      <section id="kompakt" class="section compact-section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Wersja skondensowana</p>
+            <h2>Powtórka 10 minut przed rozmową</h2>
+          </div>
+        </div>
+        <div class="compact-grid">
+          <article class="compact-card">
+            <h3>1. Pozycjonowanie</h3>
+            <p>Nie udaję cloud experta. Pokazuję, że mam fundament operacyjny: logi, incydenty, security, troubleshooting i komunikację.</p>
+          </article>
+          <article class="compact-card">
+            <h3>2. Cloud mental model</h3>
+            <p>Każda usługa to zwykle compute, network, storage, identity, monitoring i security. Problem zawężam po tych obszarach.</p>
+          </article>
+          <article class="compact-card">
+            <h3>3. Troubleshooting</h3>
+            <p>Impact, metryki, logi, ostatnie zmiany, stabilizacja, root cause. Najpierw fakty, potem dzialanie.</p>
+          </article>
+          <article class="compact-card">
+            <h3>4. Linux</h3>
+            <p>Status usług: systemctl. Procesy: ps/top. Dysk: df/du. Logi: journalctl i /var/log. Sieć: ss/ip/curl.</p>
+          </article>
+          <article class="compact-card">
+            <h3>5. Azure lab</h3>
+            <p>RG, VNet, subnet, NSG, VM, public IP, Nginx, Azure Monitor, alert CPU, cleanup Resource Group.</p>
+          </article>
+          <article class="compact-card">
+            <h3>6. Gdy nie wiesz</h3>
+            <p>Nie zgaduję. Mówię jak sprawdzę: dokumentacja, logi, metryki, test w labie, eskalacja z konkretnymi faktami.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="linux" class="section">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Linux basics</p>
+            <h2>Komendy operacyjne, które warto znać</h2>
+          </div>
+        </div>
+        <div class="linux-layout">
+          <article class="linux-block">
+            <h3>Status systemu i zasoby</h3>
+            <div class="command-list">
+              <div><code>uptime</code><span>czas działania, load average, liczba zalogowanych userów</span></div>
+              <div><code>top</code><span>procesy i zużycie CPU/RAM na żywo</span></div>
+              <div><code>free -m</code><span>pamięć RAM w MB</span></div>
+              <div><code>df -h</code><span>wolne miejsce na filesystemach</span></div>
+              <div><code>du -sh /var/log/*</code><span>co zajmuje miejsce w katalogu logów</span></div>
+            </div>
+          </article>
+          <article class="linux-block">
+            <h3>Procesy i usługi</h3>
+            <div class="command-list">
+              <div><code>ps aux</code><span>lista procesów</span></div>
+              <div><code>ps aux | grep nginx</code><span>szukanie procesu po nazwie</span></div>
+              <div><code>sudo systemctl status nginx</code><span>status usługi</span></div>
+              <div><code>sudo systemctl restart nginx</code><span>restart usługi</span></div>
+              <div><code>sudo systemctl enable nginx</code><span>autostart po restarcie systemu</span></div>
+            </div>
+          </article>
+          <article class="linux-block">
+            <h3>Logi</h3>
+            <div class="command-list">
+              <div><code>sudo journalctl -xe</code><span>ostatnie ważne logi systemd</span></div>
+              <div><code>sudo journalctl -u nginx --since "30 minutes ago"</code><span>logi konkretnej usługi</span></div>
+              <div><code>sudo tail -f /var/log/syslog</code><span>podgląd logu na żywo</span></div>
+              <div><code>sudo tail -n 100 /var/log/nginx/error.log</code><span>ostatnie 100 linii logu błędów</span></div>
+              <div><code>grep -i error /var/log/nginx/error.log</code><span>szukanie błędów bez rozróżniania wielkości liter</span></div>
+            </div>
+          </article>
+          <article class="linux-block">
+            <h3>Pliki i katalogi</h3>
+            <div class="command-list">
+              <div><code>pwd</code><span>pokazuje aktualny katalog</span></div>
+              <div><code>ls -la</code><span>lista plików, także ukrytych, z uprawnieniami</span></div>
+              <div><code>mkdir logs</code><span>tworzy katalog</span></div>
+              <div><code>cp app.log backup.log</code><span>kopiuje plik</span></div>
+              <div><code>mv app.log /tmp/</code><span>przenosi albo zmienia nazwę pliku</span></div>
+            </div>
+          </article>
+          <article class="linux-block">
+            <h3>Userzy i uprawnienia</h3>
+            <div class="command-list">
+              <div><code>whoami</code><span>aktualny użytkownik</span></div>
+              <div><code>id azureuser</code><span>UID, GID i grupy użytkownika</span></div>
+              <div><code>sudo adduser testuser</code><span>tworzy użytkownika interaktywnie</span></div>
+              <div><code>sudo usermod -aG sudo testuser</code><span>dodaje usera do grupy sudo</span></div>
+              <div><code>chmod 640 file.log</code><span>zmienia uprawnienia pliku</span></div>
+              <div><code>sudo chown root:adm file.log</code><span>zmienia właściciela i grupę</span></div>
+            </div>
+          </article>
+          <article class="linux-block">
+            <h3>Sieć i szybka diagnostyka</h3>
+            <div class="command-list">
+              <div><code>ip addr</code><span>adresy IP interfejsów</span></div>
+              <div><code>ip route</code><span>routing i brama domyślna</span></div>
+              <div><code>ss -tulpn</code><span>nasłuchujące porty i procesy</span></div>
+              <div><code>curl -I http://localhost</code><span>test HTTP i nagłówki</span></div>
+              <div><code>ping 8.8.8.8</code><span>prosty test łączności IP</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="quote-strip">
+          <strong>Jak to powiedzieć:</strong>
+          w Linuxie zaczynam od zasobów, statusu usługi i logów. Jeśli aplikacja nie odpowiada,
+          rozdzielam problem na proces, port, firewall/sieć i zależności.
+        </div>
       </section>
 
       <section id="azure-lab" class="section">
@@ -113,7 +229,7 @@
           <aside class="lab-steps" aria-label="Kroki labu">
             <button class="step-button active" data-step="0">1. Cel labu</button>
             <button class="step-button" data-step="1">2. Zasoby Azure</button>
-            <button class="step-button" data-step="2">3. Siec i NSG</button>
+            <button class="step-button" data-step="2">3. Sieć i NSG</button>
             <button class="step-button" data-step="3">4. VM i Nginx</button>
             <button class="step-button" data-step="4">5. Monitoring</button>
             <button class="step-button" data-step="5">6. Cleanup</button>
@@ -129,16 +245,16 @@
 
       <section id="scenariusze" class="section">
         <div class="section-head">
-          <p class="eyebrow">Logiczne myslenie</p>
-          <h2>Scenariusze, ktore warto umiec opowiedziec</h2>
+          <p class="eyebrow">Logiczne myślenie</p>
+          <h2>Scenariusze, które warto umieć opowiedzieć</h2>
         </div>
         <div class="scenario-grid">
           <article class="panel">
-            <h3>Aplikacja w Azure dziala wolno</h3>
+            <h3>Aplikacja w Azure działa wolno</h3>
             <ol>
               <li>Potwierdzam objawy: kto, od kiedy, jaki impact.</li>
-              <li>Sprawdzam metryki: CPU, RAM, dysk, siec, requesty, bledy.</li>
-              <li>Patrze w logi aplikacyjne i systemowe.</li>
+              <li>Sprawdzam metryki: CPU, RAM, dysk, sieć, requesty, błędy.</li>
+              <li>Patrzę w logi aplikacyjne i systemowe.</li>
               <li>Sprawdzam ostatnie zmiany: deployment, konfiguracja, ruch, certyfikat.</li>
               <li>Najpierw stabilizuje, potem szukam root cause.</li>
             </ol>
@@ -146,19 +262,19 @@
           <article class="panel">
             <h3>Alert: dysk 90% o 2:00</h3>
             <ol>
-              <li>Sprawdzam, czy usluga nadal dziala i czy dysk rosnie.</li>
+              <li>Sprawdzam, czy usługa nadal działa i czy dysk rośnie.</li>
               <li>Identyfikuje, co zajmuje miejsce: logi, cache, dumpy, backupy.</li>
-              <li>Gasze pozar: bezpieczne czyszczenie albo powiekszenie dysku.</li>
-              <li>Po incydencie dodaje retencje i alert wczesniej, np. przy 80%.</li>
+              <li>Gaszę pożar: bezpieczne czyszczenie albo powiększenie dysku.</li>
+              <li>Po incydencie dodaję retencję i alert wcześniej, np. przy 80%.</li>
             </ol>
           </article>
           <article class="panel">
             <h3>VM nie odpowiada na SSH/RDP</h3>
             <ol>
               <li>Sprawdzam status VM, public IP i boot diagnostics.</li>
-              <li>Weryfikuje NSG, firewall, routing, VPN/Bastion.</li>
-              <li>Rozdzielam problem: maszyna, system, siec czy metoda dostepu.</li>
-              <li>Jesli trzeba, eskaluje z faktami i wykonanymi krokami.</li>
+              <li>Weryfikuję NSG, firewall, routing, VPN/Bastion.</li>
+              <li>Rozdzielam problem: maszyna, system, sieć czy metoda dostępu.</li>
+              <li>Jeśli trzeba, eskaluję z faktami i wykonanymi krokami.</li>
             </ol>
           </article>
         </div>
@@ -171,29 +287,29 @@
         </div>
         <div class="qa-list">
           <details open>
-            <summary>Czy pracowales z Azure/AWS?</summary>
+            <summary>Czy pracowałeś z Azure/AWS?</summary>
             <p>
-              Komercyjnie jeszcze nie. Obecnie moje doswiadczenie jest zwiazane glownie
-              z Cisco Mail Gateway i operacyjnym utrzymaniem uslugi. Przygotowuje sie do
-              pracy z cloudem: ucze sie podstaw Azure/AWS i rozumiem obszary compute,
+              Praktycznego doświadczenia z Azure/AWS jeszcze nie mam. Obecnie moje doświadczenie jest związane głównie
+              z Cisco Mail Gateway i operacyjnym utrzymaniem usługi. Przygotowuję się do
+              pracy z cloudem: uczę się podstaw Azure/AWS i rozumiem obszary compute,
               network, storage, identity oraz monitoring.
             </p>
           </details>
           <details>
-            <summary>Co mozesz wniesc bez doswiadczenia cloud?</summary>
+            <summary>Co możesz wnieść bez doświadczenia cloud?</summary>
             <p>
-              Dobre podstawy operacyjne: analize problemow, prace z logami, rozumienie
-              wplywu zmian konfiguracyjnych, ostroznosc przy produkcji i komunikacje
-              podczas incydentow. Nie udaje, ze znam wszystkie uslugi, ale umiem
-              metodycznie dochodzic do faktow.
+              Dobre podstawy operacyjne: analizę problemów, pracę z logami, rozumienie
+              wpływu zmian konfiguracyjnych, ostrożność przy produkcji i komunikację
+              podczas incydentów. Nie udaję, że znam wszystkie usługi, ale umiem
+              metodycznie dochodzić do faktów.
             </p>
           </details>
           <details>
             <summary>Dlaczego cloud?</summary>
             <p>
-              Cloud laczy administracje, troubleshooting, siec, security i automatyzacje.
-              To naturalny kierunek rozwoju po pracy operacyjnej z uslugami
-              bezpieczenstwa, szczegolnie gdy chce isc w monitoring, IaC i kontenery.
+              Cloud łączy administrację, troubleshooting, sieć, security i automatyzację.
+              To naturalny kierunek rozwoju po pracy operacyjnej z usługami
+              bezpieczeństwa, szczególnie gdy chcę iść w monitoring, IaC i kontenery.
             </p>
           </details>
         </div>
@@ -202,7 +318,7 @@
 
     <footer class="footer">
       <span>Plan nauki: fundamenty sieci + Azure lab + troubleshooting + spokojna komunikacja.</span>
-      <a href="#start">Do gory</a>
+      <a href="#start">Do góry</a>
     </footer>
 
     <script src="script.js"></script>
